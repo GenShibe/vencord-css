@@ -1,8 +1,3 @@
-@import url("https://everviolet.github.io/discord/themes/evergarden-fall.theme.css")
-(prefers-color-scheme: dark);
-@import url("https://everviolet.github.io/discord/themes/evergarden-summer.theme.css")
-(prefers-color-scheme: light);
-
 @import url("https://aushevahmad.github.io/awesome-css/modules/custom-bar-prompt.css");
 :root {
     --prompt-text: "be gay do crime uwu :3"; /* replace --prompt-text with your desired text if you want */
