@@ -149,56 +149,6 @@ ul[aria-label="Direct Messages"] {
     }
 }
 
-/* try fix some stupid bar stuff */
-.visual-refresh {
-    div[class^="subtitleContainer_"],
-    main[class^="container__"] section[class*="container__"] {
-        position-anchor: --vr-header-trailing;
-        width: calc(100% - 76px);
-    }
-
-    div[class^="page_"] {
-        &:not(:has(> div[class^="chat_"])) {
-            anchor-name: --vr-header-snippet; 
-        }
-
-        & > div[class^="chat_"] {
-            anchor-name: --vr-header-snippet; 
-        }
-    }
-
-    div[class^="base_"] {
-        grid-template-rows: auto;
-
-        & > div[class^="bar_"] {
-            position: absolute;
-            position-anchor: --vr-header-snippet;
-            top: 0;
-            right: anchor(right);
-            width: anchor-size(width);
-            padding: 0;
-        }
-
-        & div[class^="trailing_"] {
-            anchor-name: --vr-header-trailing;
-            background-color: var(--background-base-lower);
-            border: none;
-            border-bottom: 1px solid var(--border-subtle);
-            height: var(--custom-channel-header-height);
-            margin-right: -10px;
-        }
-    }
-
-    :not(:has(div[class^="page_"] > div[class^="chat_"])) div[class^="base_"] > div[class^="bar_"] {
-        right: 0 !important;
-    }
-
-    ul[data-list-id="guildsnav"] > div[class^="itemsContainer_"] {
-        margin-top: 16px;
-    }
-}
-
-
 /* visual refresh member list fix */
 .visual-refresh .membersGroup_c8ffbb {
   padding: var(--space-xxs) var(--space-xxs) var(--space-xxs) var(--space-md);
