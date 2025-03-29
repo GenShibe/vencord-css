@@ -12,6 +12,17 @@ div[class^=sidebar] div[class^=container] div[class^=progressBar] {
 background: linear-gradient(to right,#60d0fa, #f5acba, #ffffff, #f5acba, #60d0fa) !important;
 }
 
+/* Status based Activity Icon */
+[class^=memberInner]:has(> div > [aria-label*="Online"]) [class^=subText] svg > path[fill="#23a55a"] { fill: #43b581 }
+
+[class^=memberInner]:has(> div >[aria-label*=Idle]) [class^=subText] svg > path[fill="#23a55a"] { fill: #f0b232 }
+
+[class^=memberInner]:has(> div > [aria-label*="Do Not Disturb"]) [class^=subText] svg > path[fill="#23a55a"] { fill: #f23f43 }
+
+[class^=memberInner]:has(> div > [aria-label*=Streaming]) [class^=subText] svg > path[fill="#23a55a"] { fill: #643da7 }
+
+[class^=memberInner] [class^=subText] svg > path[fill="#23a55a"] { fill: #747f8d } 
+
 /* discoveryyy */
 [data-list-id="guildsnav"] [class^="footer"]:has(>[class^="gradient"]) {
   display: none;
@@ -218,6 +229,44 @@ ul[aria-label="Direct Messages"] {
             height: auto !important;
         }
     }
+}
+/* colored role pills */
+.role_dfa8b6.pill_dfa8b6 {
+    position: relative;
+    background: none;
+    border: none;
+    padding-left: 28px;
+}
+
+.role_dfa8b6.pill_dfa8b6 > span {
+    z-index: 1;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleRemoveButton_dfa8b6 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0 !important;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569 {
+    margin: 6px 8px;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: inherit;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: var(--radius-xs);
+    filter: brightness(1.1);
+    opacity: 0.25;
 }
 
 /* detailed timestamps */
