@@ -12,6 +12,10 @@ div[class^=sidebar] div[class^=container] div[class^=progressBar] {
 background: linear-gradient(to right,#60d0fa, #f5acba, #ffffff, #f5acba, #60d0fa) !important;
 }
 
+/* get rid of the inbox */
+.recentsIcon_c99c29 {
+    display: none}
+
 /* Status based Activity Icon */
 [class^=memberInner]:has(> div > [aria-label*="Online"]) [class^=subText] svg > path[fill="#23a55a"] { fill: #43b581 }
 
