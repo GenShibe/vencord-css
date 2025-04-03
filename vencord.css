@@ -13,7 +13,7 @@ background: linear-gradient(to right,#60d0fa, #f5acba, #ffffff, #f5acba, #60d0fa
 }
 
 /* get rid of the inbox */
-.recentsIcon_c99c29 {visibility: hidden;
+.recentsIcon_c99c29 {display: none;
                     } !important
 
 /* Status based Activity Icon */
