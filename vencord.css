@@ -10,9 +10,9 @@
 @import url("https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css");
 :root {
   /* Use if your theme overwrites the color */
-    --channeltextarea-background: var(--backgroundColor01);
+ --channeltextarea-background: var(--backgroundColor01) !important;
   /* set to `0px` if no applauncher */
-  --scb-applauncher-padding: -52px;
+  --scb-applauncher-padding: 0px;
   /* border-radius of bar */
   --scb-border-radius: 8px /* default = 8px */;
 }
