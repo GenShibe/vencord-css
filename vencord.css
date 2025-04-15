@@ -6,11 +6,13 @@
 :root {
     --bartender-width: 4ch;  /* Width for displayed icon. Adjust depending on your needs [Default: 4ch] */
 }
+
 @import url("https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css");
 :root {
     /* change padding of the bar */
      --rscb-chat-box-padding: 8px; /* default is 8px for alignment */
 }
+
 @import url(https://overimagine1.github.io/old-discord-font/source.css);
 /* Transgender Boost Gradient; Recolors the boosting gradient to be the best flag ever */
 div[class^=sidebar] div[class^=container] div[class^=progressBar] {
