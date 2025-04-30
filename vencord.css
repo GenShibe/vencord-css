@@ -1,11 +1,3 @@
-@import url("https://aushevahmad.github.io/awesome-css/modules/custom-bar-prompt.css");
-:root {
-    --prompt-text: "be gay do crime uwu :3"; /* replace --prompt-text with your desired text if you want */
-}
-@import url("https://aushevahmad.github.io/awesome-css/modules/bartender.css");
-:root {
-    --bartender-width: 4ch;  /* Width for displayed icon. Adjust depending on your needs [Default: 4ch] */
-}
 @import url('https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/browser.css');
 :root {
     /* controls the vertical position of the window buttons */
@@ -16,6 +8,15 @@
     --vr-header-snippet-space: 200px !important;
     /* controls the space to the right of the window buttons, good if you are using themes like midnight which add padding to the bar */
     --vr-header-snippet-button-padding: 0 !important;
+}
+
+@import url("https://aushevahmad.github.io/awesome-css/modules/custom-bar-prompt.css");
+:root {
+    --prompt-text: "be gay do crime uwu :3"; /* replace --prompt-text with your desired text if you want */
+}
+@import url("https://aushevahmad.github.io/awesome-css/modules/bartender.css");
+:root {
+    --bartender-width: 4ch;  /* Width for displayed icon. Adjust depending on your needs [Default: 4ch] */
 }
 
 @import url("https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css");
