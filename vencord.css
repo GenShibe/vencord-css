@@ -219,67 +219,6 @@ ul[aria-label="Direct Messages"] {
   height: 0px !important;
 }
 
-/* revert visual refresh server sidebar */
-:root {
-    --guildbar-avatar-size: 48px !important;
-}
-
-.visual-refresh nav[class*="guilds_"] {
-    /* Uncomment if you changed up your nameplace */
-    /* margin: 0;
-    [class*="sidebar_"]:has(&)::after {
-        height: 0;
-    } */
-    [class*="listItem__"] {
-        defs > path {
-            d: path("M 0 0 H 200 V 200 H 0 Z");
-        }
-        [class*="childWrapper__"],
-        [class*="childWrapper__"] img,
-        [class*="icon_"],
-        [class*="circleIconButton__"] {
-            border-radius: 100% !important;
-            transition: border-radius 150ms;
-        }
-        [class*="selected__"] {
-            [class*="childWrapper__"],
-            [class*="childWrapper__"] img,
-            [class*="icon_"],
-            [class*="circleIconButton__"] {
-                border-radius: 20px !important;
-            }
-        }
-        svg {
-            top: 0px;
-            left: 0px;
-            foreignObject {
-                width: var(--guildbar-avatar-size);
-                height: var(--guildbar-avatar-size);
-                transform: translate(-4px, -4px);
-            }
-            &:not([class*="folderIcon__"]) > mask {
-                use[href$="-lower_badge_masks"] {
-                    transform: translate(8px, 8px);
-                }
-                use[href$="-upper_badge_masks"] {
-                    transform: translate(8px, 0px);
-                }
-            }
-        }
-        [class*=expandedFolderIconWrapper__] svg {
-            width: 24px;
-            height: 24px;
-        }
-    }
-    [class*="stack_"] {
-        & > div:not([class]):has([class*="listItem__"]) {
-            height: 45px !important;
-        }
-        [class*="isExpanded__"] & {
-            height: auto !important;
-        }
-    }
-}
 /* colored role pills */
 .role_dfa8b6.pill_dfa8b6 {
     position: relative;
