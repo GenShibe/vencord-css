@@ -116,22 +116,15 @@ background: linear-gradient(to right,#60d0fa, #f5acba, #ffffff, #f5acba, #60d0fa
         margin-top: var(--vr-header-snippet-server-padding);
     }
 }
-
-
 .visual-refresh nav:has([data-list-id="guildsnav"]) {
   margin-bottom: unset;
 }
 
-
 /* Status based Activity Icon */
 [class^=memberInner]:has(> div > [aria-label*="Online"]) [class^=subText] svg > path[fill="#23a55a"] { fill: #43b581 }
-
 [class^=memberInner]:has(> div >[aria-label*=Idle]) [class^=subText] svg > path[fill="#23a55a"] { fill: #f0b232 }
-
 [class^=memberInner]:has(> div > [aria-label*="Do Not Disturb"]) [class^=subText] svg > path[fill="#23a55a"] { fill: #f23f43 }
-
 [class^=memberInner]:has(> div > [aria-label*=Streaming]) [class^=subText] svg > path[fill="#23a55a"] { fill: #643da7 }
-
 [class^=memberInner] [class^=subText] svg > path[fill="#23a55a"] { fill: #747f8d } 
 
 /* discoveryyy */
@@ -201,7 +194,6 @@ ul[aria-label="Direct Messages"] {
     &>li:has(div>a[href="/store"]) {
         display: none;
     }
-
     &>li:has(div>a[href="/shop"]) {
         display: none;
     }
@@ -238,13 +230,10 @@ ul[aria-label="Direct Messages"] {
     [class*="sidebar_"]:has(&)::after {
         height: 0;
     } */
-    
-
     [class*="listItem__"] {
         defs > path {
             d: path("M 0 0 H 200 V 200 H 0 Z");
         }
-
         [class*="childWrapper__"],
         [class*="childWrapper__"] img,
         [class*="icon_"],
@@ -252,7 +241,6 @@ ul[aria-label="Direct Messages"] {
             border-radius: 100% !important;
             transition: border-radius 150ms;
         }
-
         [class*="selected__"] {
             [class*="childWrapper__"],
             [class*="childWrapper__"] img,
@@ -264,7 +252,6 @@ ul[aria-label="Direct Messages"] {
         svg {
             top: 0px;
             left: 0px;
-
             foreignObject {
                 width: var(--guildbar-avatar-size);
                 height: var(--guildbar-avatar-size);
@@ -300,11 +287,9 @@ ul[aria-label="Direct Messages"] {
     border: none;
     padding-left: 28px;
 }
-
 .role_dfa8b6.pill_dfa8b6 > span {
     z-index: 1;
 }
-
 .role_dfa8b6.pill_dfa8b6 .roleRemoveButton_dfa8b6 {
     position: absolute;
     top: 0px;
@@ -313,11 +298,9 @@ ul[aria-label="Direct Messages"] {
     bottom: 0px;
     margin: 0 !important;
 }
-
 .role_dfa8b6.pill_dfa8b6 .roleCircle__4f569 {
     margin: 6px 8px;
 }
-
 .role_dfa8b6.pill_dfa8b6 .roleCircle__4f569::before {
     content: '';
     display: block;
@@ -331,7 +314,6 @@ ul[aria-label="Direct Messages"] {
     filter: brightness(1.1);
     opacity: 0.25;
 }
-
 /* detailed timestamps */
 span[class*="timestampInline_"] time::before {
   content: attr(aria-label);
