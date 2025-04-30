@@ -6,6 +6,17 @@
 :root {
     --bartender-width: 4ch;  /* Width for displayed icon. Adjust depending on your needs [Default: 4ch] */
 }
+@import url('https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/browser.css');
+:root {
+    /* controls the vertical position of the window buttons */
+    --vr-header-snippet-top: 0px !important;
+    /* controls the space above the server list */
+    --vr-header-snippet-server-padding: 32px !important;
+    /* controls the space the window buttons get on the channel header, experiment around with this if you get gaps or the buttons overlap! */
+    --vr-header-snippet-space: 200px !important;
+    /* controls the space to the right of the window buttons, good if you are using themes like midnight which add padding to the bar */
+    --vr-header-snippet-button-padding: 0 !important;
+}
 
 @import url("https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css");
 :root {
@@ -18,86 +29,22 @@
   \*  the gap between slowmode and typing people   */
   --rscb-clip-chat-through-typing-bar: 0;
 }
-.visual-refresh .form_f75fb0 {
-  display: flex;
-  flex-direction: column;
-  padding: 4px var(--rscb-chat-box-padding) var(--rscb-chat-box-padding)
-    var(--rscb-chat-box-padding) !important;
-  /* Normal chatbar */
-  .channelTextArea_f75fb0 {
-    margin-bottom: 0px;
-    margin-right: 1px;
-    /* reply bar */
-    .stackedBars__74017 {
-      border-bottom-color: transparent !important;
-      background-color: var(--chat-background-default);
-    }
-  }
-  /* slowmode bar + typing indicator */
-  .base_b88801 {
-    border-color: transparent !important;
-    position: static;
-    order: -1;
-    background: transparent !important;
-    background-image: transparent !important;
-    border: 1px solid var(--border-faint);
-    border-bottom: none;
-    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
-    .typing_b88801 {
-      border-color: transparent !important;
-    }
-    .typingDots_b88801,
-    .cooldownText_b21699 {
-      background-color: var(--chat-background-default);
-      height: 24px;
-      padding-right: 8px;
-      padding-left: 8px;
-      border-radius: 8px 8px 0 0;
-      border: 1px solid var(--border-faint) !important;
-      border-bottom-color: transparent !important;
-      /* because they dont have the same position */
-      &.typingDots_b88801 {
-        transform: translateX(-1px);
-        &:not(:has(span > strong)) {
-          display: none !important;
-        }
-      }
-      &.cooldownText_b21699 {
-        transform: translateY(1px);
-      }
-    }
-  }
-  .channelAttachmentArea_b77158 {
-    background-color: var(--chat-background-default);
-  }
-  /* the stars of the show, the :has */
-  /* check for typing thing */
-  &:has(> .typing_b88801 > .typingDots_b88801 > span > strong)
-    .channelTextArea_f75fb0 {
-    border-top-left-radius: 0 !important;
-  }
-  /* check for cooldown thing */
-  &:has(> .typing_b88801 > .cooldownWrapper_b21699) .channelTextArea_f75fb0 {
-    border-top-right-radius: 0 !important;
-  }
-}
-.messagesWrapper__36d07:not(
-    :has(+ .formWithLoadedChatInput_f75fb0 > .typing_b88801)
-  )
-  .scrollerContent__36d07 {
-  padding-bottom: calc(var(--rscb-no-jump-chat) * 25px);
-}
-.scrollerInner__36d07 {
-  padding-bottom: calc(var(--rscb-clip-chat-through-typing-bar) * 25px);
-}
-.scroller__36d07 {
-  margin-bottom: calc(var(--rscb-clip-chat-through-typing-bar) * (0px - 25px));
-}
 
 @import url(https://overimagine1.github.io/old-discord-font/source.css);
 /* Transgender Boost Gradient; Recolors the boosting gradient to be the best flag ever */
 div[class^=sidebar] div[class^=container] div[class^=progressBar] {
 background: linear-gradient(to right,#60d0fa, #f5acba, #ffffff, #f5acba, #60d0fa) !important;
+}
+
+@import url("https://scattagain.github.io/VencordStuff/css/GuildbarRevert.css");
+:root {
+    /* Only include this part if you wish to change these variables */
+    /* You can change the size but only to be less than 48px, you must change the blob scale too */
+    --guildbar-avatar-size: 48px;
+    --blob-scale: 48;
+
+    --guildbar-folder-size: var(--guildbar-avatar-size);
+    --folder-blob-scale: var(--blob-scale);
 }
 
 /* fix the ... is typing thing */
@@ -127,75 +74,6 @@ background: linear-gradient(to right,#60d0fa, #f5acba, #ffffff, #f5acba, #60d0fa
     font-size: 12px;
     content: "Several people are meowing...";
   }
-}
-
-/* visual refresh bar removal */
-.visual-refresh {
-    --vr-header-snippet-top: 0px;
-    --vr-header-snippet-server-padding: 32px;
-    --vr-header-snippet-space: 85px;
-
-    div.subtitleContainer_f75fb0,
-    div.chat_f75fb0,
-    main.container__133bf,
-    div.chatLayerWrapper__01ae2 {
-        & section.container__9293f {
-            padding-right: var(--vr-header-snippet-space);
-        }
-    }
-
-    div.page_c48ade {
-        &:not(:has(> div.chat_f75fb0)) {
-            anchor-name: --vr-header-snippet;
-        }
-
-        & > div.chat_f75fb0 {
-            anchor-name: --vr-header-snippet;
-        }
-    }
-
-    div.base_c48ade {
-        grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [end];
-
-        & > div.bar_c38106 {
-            position: absolute;
-            position-anchor: --vr-header-snippet;
-            top: var(--vr-header-snippet-top);
-            right: anchor(right);
-            width: anchor-size(width);
-            padding: 0;
-        }
-
-        & div.trailing_c38106 {
-            background: none;
-            border: none;
-            height: var(--custom-channel-header-height);
-        }
-
-        & > div.content_c48ade {
-            z-index: 0;
-        }
-
-        &:has(.threadSidebarOpen_f75fb0.threadSidebarFloating_f75fb0)
-            > .bar_c38106 {
-            z-index: 0;
-        }
-    }
-
-    :not(:has(div.page_c48ade > div.chat_f75fb0))
-        div.base_c48ade
-        > div.bar_c38106 {
-        right: 0 !important;
-    }
-
-    ul[data-list-id="guildsnav"]
-        > div.itemsContainer_ef3116
-        > div.stack_dbd263 {
-        margin-top: var(--vr-header-snippet-server-padding);
-    }
-}
-.visual-refresh nav:has([data-list-id="guildsnav"]) {
-  margin-bottom: unset;
 }
 
 /* Status based Activity Icon */
@@ -336,7 +214,58 @@ span[class*="timestampInline_"] time::before {
   content: attr(aria-label);
   font-size: 12px;
 }
-
 span[class*="timestampInline_"] {
   font-size: 0px !important;
+}
+
+/* align chat bar /
+.visual-refresh {
+    --custom-channel-textarea-text-area-height: 56px;
+    .form_f75fb0 {
+        margin: 0 8px 8px 8px;
+        padding: 0;
+        --chatbar-border-color: var(--border-faint);
+    }
+    .channelTextArea_f75fb0 {
+        margin: 0;
+        border-color: var(--chatbar-border-color);
+        transition: none;
+    }
+    .base_b88801 {
+        top: -24px;
+        left: 0;
+        right: 0;
+        background-color: var(--chat-background-default);
+        padding: 0 8px;
+        border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+        border: 1px solid var(--chatbar-border-color);
+        border-bottom: none;
+        transition: none;
+        box-sizing: border-box;
+    }
+    .stackedBars__74017,
+    .threadSuggestionBar__841c8 {
+        border-color: var(--chatbar-border-color) !important;
+    }
+    .form_f75fb0:has(.base_b88801) {
+        .channelTextArea_f75fb0 {
+            border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+        }
+    }
+    .form_f75fb0:has(.channelTextArea__74017:focus-within) {
+        --chatbar-border-color: var(--border-subtle);
+    }
+    .scrollerSpacer__36d07 {
+        height: calc(24px + 8px);
+    }
+    .scroller__36d07::-webkit-scrollbar-track {
+        margin-bottom: calc(20px + 8px);
+    }
+    .bottomBar__0f481 {
+        margin-bottom: 24px;
+    }
+    .wrapper__44df5 {
+        margin: 0;
+        border-radius: var(--radius-sm);
+    }
 }
