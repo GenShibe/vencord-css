@@ -21,6 +21,36 @@
 div[class^=sidebar] div[class^=container] div[class^=progressBar] {
 background: linear-gradient(to right,#60d0fa, #f5acba, #ffffff, #f5acba, #60d0fa) !important;
 }
+
+/* fix the ... is typing thing */
+.typingDots_b88801 > .ellipsis_b88801+.text_b88801 {
+  font-size: 0;
+  height: 16px;
+  >strong {
+    font-size: 12px;
+    &::after {
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+    &:last-child::after {
+      content: " is meowing...";
+    }
+    &:last-child:not(:first-child)::after {
+      content: " are meowing...";
+    }
+    &:nth-last-child(2)::after {
+      content: " and "
+    }
+    &:nth-last-child(3)::after {
+      content: ", ";
+    }
+  }
+  &:not(:has(>strong))::after {
+    font-size: 12px;
+    content: "Several people are meowing...";
+  }
+}
+
 /* visual refresh bar removal */
 .visual-refresh {
     --vr-header-snippet-top: 0px;
