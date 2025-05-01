@@ -10,9 +10,21 @@
     --vr-header-snippet-button-padding: 0 !important;
 }
 
+@import url("https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css");
+:root {
+    /* change padding of the bar */
+    --rscb-chat-box-padding: 8px; /* default is 8px for alignment */
+    /* Whether you want the chat to not move up *\
+    \*    and down when someone starts typing   */
+    --rscb-no-jump-chat: 0;
+     /* Whether you want the messages to clip through *\
+     \*  the gap between slowmode and typing people   */
+     --rscb-clip-chat-through-typing-bar: 0;
+}
+
 @import url("https://aushevahmad.github.io/awesome-css/modules/custom-bar-prompt.css");
 :root {
-    --prompt-text: "be gay do crime uwu :3"; /* replace --prompt-text with your desired text if you want */
+    --prompt-text: "be gay do crime hehehehehe :3"; /* replace --prompt-text with your desired text if you want */
 }
 @import url("https://aushevahmad.github.io/awesome-css/modules/bartender.css");
 :root {
