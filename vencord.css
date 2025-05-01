@@ -9,16 +9,6 @@
     /* controls the space to the right of the window buttons, good if you are using themes like midnight which add padding to the bar */
     --vr-header-snippet-button-padding: 0 !important;
 }
-@import url("https://scattagain.github.io/VencordStuff/css/GuildbarRevert.css");
-:root {
-    /* Only include this part if you wish to change these variables */
-    /* You can change the size but only to be less than 48px, you must change the blob scale too */
-    --guildbar-avatar-size: 48px;
-    --blob-scale: 48;
-
-    --guildbar-folder-size: var(--guildbar-avatar-size);
-    --folder-blob-scale: var(--blob-scale);
-}
 
 @import url("https://aushevahmad.github.io/awesome-css/modules/custom-bar-prompt.css");
 :root {
@@ -216,56 +206,4 @@ span[class*="timestampInline_"] time::before {
 }
 span[class*="timestampInline_"] {
   font-size: 0px !important;
-}
-
-/* align chat bar */
-.visual-refresh {
-    --custom-channel-textarea-text-area-height: 56px;
-    .form_f75fb0 {
-        margin: 0 8px 8px 8px;
-        padding: 0;
-        --chatbar-border-color: var(--border-faint);
-    }
-    .channelTextArea_f75fb0 {
-        margin: 0;
-        border-color: var(--chatbar-border-color);
-        transition: none;
-    }
-    .base_b88801 {
-        top: -24px;
-        left: 0;
-        right: 0;
-        background-color: var(--chat-background-default);
-        padding: 0 8px;
-        border-radius: var(--radius-sm) var(--radius-sm) 0 0;
-        border: 1px solid var(--chatbar-border-color);
-        border-bottom: none;
-        transition: none;
-        box-sizing: border-box;
-    }
-    .stackedBars__74017,
-    .threadSuggestionBar__841c8 {
-        border-color: var(--chatbar-border-color) !important;
-    }
-    .form_f75fb0:has(.base_b88801) {
-        .channelTextArea_f75fb0 {
-            border-radius: 0 0 var(--radius-sm) var(--radius-sm);
-        }
-    }
-    .form_f75fb0:has(.channelTextArea__74017:focus-within) {
-        --chatbar-border-color: var(--border-subtle);
-    }
-    .scrollerSpacer__36d07 {
-        height: calc(24px + 8px);
-    }
-    .scroller__36d07::-webkit-scrollbar-track {
-        margin-bottom: calc(20px + 8px);
-    }
-    .bottomBar__0f481 {
-        margin-bottom: 24px;
-    }
-    .wrapper__44df5 {
-        margin: 0;
-        border-radius: var(--radius-sm);
-    }
 }
