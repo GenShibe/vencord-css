@@ -23,39 +23,7 @@
 div[class^=sidebar] div[class^=container] div[class^=progressBar] {
 background: linear-gradient(to right,#60d0fa, #f5acba, #ffffff, #f5acba, #60d0fa) !important;
 }
-
-/* fix chat bar v23? */
-.channelBottomBarArea_f75fb0>div {
-  margin: 10px 6px 9px 6px !important;
-  min-height: 60px;
-}
-.channelBottomBarArea_f75fb0>div>div.scrollableContainer__74017 {
-  position: absolute;
-  bottom: 0;
-  transform: translateY(-4px);
-  width: 100%;
-}
-.attachWrapper__0923f>button {
-  margin-left: -9px !important;
-}
-.stackedBars__74017 {
-  margin-bottom: 55px;
-}
-.typing_b88801.base_b88801 {
-  margin-bottom: 6px;
-  margin-left: 4px;
-}
-.typing_b88801.base_b88801 > * {
-  line-height: 10px !important;
-  font-size: 10px !important;
-}
-.typing_b88801.base_b88801 > div > span > strong > div > svg {
-  height:10px !important;
-  margin-left: 3px;
-  margin-top: 3px;
-}
-
-/* compact right click menu */
+    
 /* reduce context menu padding */
 .layer_da8173 > .menu_c1e9c4 > .scroller_c1e9c4 {
     margin: -4px;
