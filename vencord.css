@@ -10,6 +10,16 @@
     --vr-header-snippet-button-padding: 0 !important;
 }
 
+@import url("https://scattagain.github.io/VencordStuff/css/GuildbarRevert.css");
+:root {
+    /* Only include this part if you wish to change these variables */
+    /* You can change the size but only to be less than 48px, you must change the blob scale too */
+    --guildbar-avatar-size: 48px;
+    --blob-scale: 48;
+    --guildbar-folder-size: var(--guildbar-avatar-size);
+    --folder-blob-scale: var(--blob-scale);
+}
+
 @import url("https://aushevahmad.github.io/awesome-css/modules/custom-bar-prompt.css");
 :root {
     --prompt-text: "be gay do crime hehehehehe :3"; /* replace --prompt-text with your desired text if you want */
@@ -17,19 +27,6 @@
 @import url("https://aushevahmad.github.io/awesome-css/modules/bartender.css");
 :root {
     --bartender-width: 4ch;  /* Width for displayed icon. Adjust depending on your needs [Default: 4ch] */
-}
-
-@import url("https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css");
-:root {
-  /* Custom padding for the chat box */
-  --rscb-chat-box-padding: 8px;
-  /* Whether you want the chat to not move up *\
-  \*    and down when someone starts typing   */
-  --rscb-no-jump-chat: 0;
-  /* Whether you want the messages to clip through *\
-  \*  the gap between slowmode and typing people   */
-  --rscb-clip-chat-through-typing-bar: 0;
-}
 
 @import url(https://overimagine1.github.io/old-discord-font/source.css);
 /* Transgender Boost Gradient; Recolors the boosting gradient to be the best flag ever */
