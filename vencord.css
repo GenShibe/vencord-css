@@ -9,10 +9,6 @@
     /* controls the space to the right of the window buttons, good if you are using themes like midnight which add padding to the bar */
     --vr-header-snippet-button-padding: 0 !important;
 }
-@import url("https://everviolet.github.io/discord/themes/evergarden-winter.theme.css")
-(prefers-color-scheme: dark);
-@import url("https://everviolet.github.io/discord/themes/evergarden-summer.theme.css")
-(prefers-color-scheme: light);
 
 @import url("https://aushevahmad.github.io/awesome-css/modules/custom-bar-prompt.css");
 :root {
