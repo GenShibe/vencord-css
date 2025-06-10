@@ -9,7 +9,18 @@
     /* controls the space to the right of the window buttons, good if you are using themes like midnight which add padding to the bar */
     --vr-header-snippet-button-padding: 0 !important;
 }
-
+@import url("https://raw.githubusercontent.com/scattagain/VencordStuff/refs/heads/main/css/GuildbarRevert.css");
+@import url("https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css");
+:root {
+  /* Custom padding for the chat box */
+  --rscb-chat-box-padding: 8px;
+  /* Whether you want the chat to not move up *\
+  \*    and down when someone starts typing   */
+  --rscb-no-jump-chat: 0;
+  /* Whether you want the messages to clip through *\
+  \*  the gap between slowmode and typing people   */
+  --rscb-clip-chat-through-typing-bar: 0;
+}
 @import url("https://aushevahmad.github.io/awesome-css/modules/custom-bar-prompt.css");
 :root {
     --prompt-text: "be gay do crime hehehehehe :3"; /* replace --prompt-text with your desired text if you want */
