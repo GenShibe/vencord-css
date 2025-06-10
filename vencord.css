@@ -1,4 +1,4 @@
-@import url('https://surgedevs.github.io/visual-refresh-compact-title-bar/desktop.css');
+@import url('https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/desktop.css');
 :root {
     /* controls the vertical position of the window buttons */
     --vr-header-snippet-top: 0px !important;
