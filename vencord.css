@@ -10,7 +10,7 @@
     --vr-header-snippet-button-padding: 0 !important;
 }
 
-@import url("https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css");
+@import url("https://raw.githubusercontent.com/NSPC911/themes/refs/heads/main/vencord/RefreshedSeamlessChatBar.theme.css");
 :root {
   /* Custom padding for the chat box */
   --rscb-chat-box-padding: 8px;
@@ -22,14 +22,15 @@
   --rscb-clip-chat-through-typing-bar: 0;
 }
 
-@import url("https://aushevahmad.github.io/awesome-css/modules/custom-bar-prompt.css");
+@import url("https://raw.githubusercontent.com/AushevAhmad/awesome-css/refs/heads/main/modules/custom-bar-prompt.css");
 :root {
-    --prompt-text: "be gay do crime hehehehehe :3"; /* replace --prompt-text with your desired text if you want */
+    --prompt-text: "be gay do crime~"; /* replace --prompt-text with your desired text if you want */
 }
 
-@import url("https://aushevahmad.github.io/awesome-css/modules/bartender.css");
+@import url("https://raw.githubusercontent.com/AushevAhmad/awesome-css/refs/heads/main/modules/bartender.css");
 :root {
     --bartender-width: 4ch;  /* Width for displayed icon. Adjust depending on your needs [Default: 4ch] */
+}
     
 /* Transgender Boost Gradient; Recolors the boosting gradient to be the best flag ever */
 div[class^=sidebar] div[class^=container] div[class^=progressBar] {
