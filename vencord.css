@@ -1,3 +1,5 @@
+@import url("https://raw.githubusercontent.com/scattagain/VencordStuff/refs/heads/main/css/GuildbarRevert.css");
+
 @import url('https://surgedevs.github.io/visual-refresh-compact-title-bar/desktop.css');
 :root {
     /* controls the vertical position of the window buttons */
@@ -9,7 +11,7 @@
     /* controls the space to the right of the window buttons, good if you are using themes like midnight which add padding to the bar */
     --vr-header-snippet-button-padding: 0 !important;
 }
-@import url("https://raw.githubusercontent.com/scattagain/VencordStuff/refs/heads/main/css/GuildbarRevert.css");
+
 @import url("https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css");
 :root {
   /* Custom padding for the chat box */
@@ -21,14 +23,16 @@
   \*  the gap between slowmode and typing people   */
   --rscb-clip-chat-through-typing-bar: 0;
 }
+
 @import url("https://aushevahmad.github.io/awesome-css/modules/custom-bar-prompt.css");
 :root {
     --prompt-text: "be gay do crime hehehehehe :3"; /* replace --prompt-text with your desired text if you want */
 }
+
 @import url("https://aushevahmad.github.io/awesome-css/modules/bartender.css");
 :root {
     --bartender-width: 4ch;  /* Width for displayed icon. Adjust depending on your needs [Default: 4ch] */
-
+    
 @import url(https://overimagine1.github.io/old-discord-font/source.css);
 /* Transgender Boost Gradient; Recolors the boosting gradient to be the best flag ever */
 div[class^=sidebar] div[class^=container] div[class^=progressBar] {
