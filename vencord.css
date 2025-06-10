@@ -31,8 +31,6 @@
 :root {
     --bartender-width: 4ch;  /* Width for displayed icon. Adjust depending on your needs [Default: 4ch] */
     
-@import url("https://overimagine1.github.io/old-discord-font/source.css");
-    
 /* Transgender Boost Gradient; Recolors the boosting gradient to be the best flag ever */
 div[class^=sidebar] div[class^=container] div[class^=progressBar] {
 background: linear-gradient(to right,#60d0fa, #f5acba, #ffffff, #f5acba, #60d0fa) !important;
