@@ -102,6 +102,39 @@
     content: "be gay do crime~"; /* replace var() with your desired text (in quotes) */
 }
 
+/* hide chat bar actions */
+:has(> * > .file-input) {
+  [aria-label="Send a gift"] {
+    display: none;
+  }
+
+  &:not(:has([aria-hidden="true"] + [role="textbox"])) {
+    [aria-label="Open sticker picker"] {
+      display: none;
+    }
+
+    [aria-label="Open GIF picker"] {
+      display: none;
+    }
+
+    .app-launcher-entrypoint {
+      display: none;
+    }
+  }
+}
+
+/* compact channel header bar */
+[aria-label="Channel header"] div:has(> [aria-label="Clear search"]) {
+  width: 96px;
+}
+[aria-label="Channel header"] [aria-label="Notification Settings"] {
+  display: none;
+}
+/* move up message actions */
+[aria-roledescription="Message"] [aria-label="Message Actions"] {
+  top: -32px !important;
+}
+
 /* visual refresh top bar removal */
 .visual-refresh {
   --vr-header-snippet-top: 0px;
