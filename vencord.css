@@ -15,7 +15,7 @@
   /* Custom padding for the chat box */
   --rscb-chat-box-padding: 8px;
   /* Whether you want the chat to not move up and down when someone starts typing   */
-  --rscb-no-jump-chat: 0;
+  --rscb-no-jump-chat: 1;
   /* Whether you want the messages to clip through the gap between slowmode and typing people   */
   --rscb-clip-chat-through-typing-bar: 0;
 /* prompt text */
