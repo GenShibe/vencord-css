@@ -1,15 +1,3 @@
-@import url("https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css");
-:root {
-  /* Custom padding for the chat box */
-  --rscb-chat-box-padding: 0px;
-  /* Whether you want the messages to clip through *\
-  \*  the gap between slowmode and typing people   */
-  --rscb-clip-chat-through-typing-bar: 1;
-  /* certain older themes havent been *\
-  \* updated, use this if necessary   */
-  --rscb-use-fixed-attach-button: 1;
-}
-
 @import url("https://aushevahmad.github.io/awesome-css/modules/custom-bar-prompt.css");
 :root {
   /* controls the vertical position of the window buttons */
