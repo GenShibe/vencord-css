@@ -1,7 +1,7 @@
 @import url("https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css");
 :root {
   /* Custom padding for the chat box */
-  --rscb-chat-box-padding: 8px;
+  --rscb-chat-box-padding: 0px;
   /* Whether you want the messages to clip through *\
   \*  the gap between slowmode and typing people   */
   --rscb-clip-chat-through-typing-bar: 1;
